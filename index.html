@@ -23,7 +23,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00'
                     }
                 }
             }
@@ -38,20 +39,20 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+    <header class="max-w-2xl md:max-w-xl lg:max-w-screen-lg mx-auto">
+        <div class="my-24">
+            <div class="flex items-center justify-between flex-col lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">
                         It's good <br>
-                        tea time at The <br>
+                        tea time at The
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More <i class="fa-solid fa-arrow-trend-up"></i></button>
                 </div>
                 <div>
-                    <img src="/images/banner.png" class="max-w-sm" />
+                    <img src="/images/banner.png" class="" />
                     <div class="-mt-16 flex gap-4 items-center drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-4xl text-amber-400"></i>
                         <div>
@@ -142,7 +143,7 @@
 
         <!-- super client section  -->
         <section
-            class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-l from-[#F00] to-[#FF8938] px-10 py-12">
+            class="my-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-gradient-start to-gradient-end px-10 py-12">
             <div class="flex items-center lg:pr-24">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -199,11 +200,103 @@
             </div>
         </section>
 
+
+        <!-- news and event section  -->
+        <section class=" my-24">
+            <h2 class="text-5xl font-extrabold mb-5 text-center">News & Events</h2>
+            <p class="lg:max-w-3xl mb-10 mx-auto text-center">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                words which don't look even slightly believable. </p>
+
+            <!--news and event card container  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- first card  -->
+                <div class="card p-2 bg-base-100 border-2 border-gray-200">
+                    <figure><img src="/images/news-1.png" alt="" /></figure>
+                    <div class="p-3 space-y-2">
+                        <p class="text-gray-400">Feb 05, 2027</p>
+                        <h2 class="text-lg font-extrabold">Collecting 8 points for discount</h2>
+                        <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- second card  -->
+                <div class="card p-2 bg-base-100 border-2 border-gray-200">
+                    <figure><img src="/images/news-2.png" alt="" /></figure>
+                    <div class="p-3 space-y-2">
+                        <p class="text-gray-400">Feb 05, 2027</p>
+                        <h2 class="text-lg font-extrabold">Collecting 8 points for discount</h2>
+                        <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- third card  -->
+                <div class="card p-2 bg-base-100 border-2 border-gray-200">
+                    <figure><img src="/images/news-3.png" alt="" /></figure>
+                    <div class="p-3 space-y-2">
+                        <p class="text-gray-400">Feb 05, 2027</p>
+                        <h2 class="text-lg font-extrabold">Collecting 8 points for discount</h2>
+                        <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+                        <p class="font-bold">Learn More</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
 
-    <footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to Get Started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com"
+                            class="bg-transparent border-b-2 border-black py-3" />
+                        <button
+                            class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white absolute top-0 right-0 rounded-full">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
 </body>
 
